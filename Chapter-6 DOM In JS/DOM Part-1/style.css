@@ -1,0 +1,43 @@
+/* 3-: external CSS */
+div{
+    height: 100px;
+    width: 100px;
+    background-color: green;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+}
+ 
+h1{
+    background-color: red;
+    color: white;
+}
+
+body{
+    background-color: pink;
+}
+
+button{
+    background-color: blue;
+}
+
+
+/* id selector is always unique -:  */
+
+/* " # " is used for "id" and " . " is used for "class" selectors. */
+/* html tag (p->paragraph) is selected by using id named para -: */
+
+#para{
+    background-color: white;
+    color: black;
+}
+
+ 
+/* class selector -: */
+/* .class_name is used for class selector  */
+
+.myClass{
+    background-color: red;
+    text-align: center;
+    font-size: bold;
+}
