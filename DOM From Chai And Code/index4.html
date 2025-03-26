@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part-4</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+    <ul class="language">
+        <li>Javascript</li>
+    </ul>
+
+
+
+
+    <script src="script4.js"></script>
+
+</body>
+
+<script>
+
+
+    /* Add one more list item */
+    /* M-1 -: by using function */
+
+    // syntax -: function then fun_name(pass parameter){
+
+    // }
+
+
+    // how to add -: 
+    // create a list_item then select ul then append the ele 
+
+
+    // this is a function -: 
+    function addLanguage(langName){
+        // create a ele.(list item) named li (name can be anything) and store it into the variable lii, put li into the innerHTML, now attached using select the ele. 
+        const lii = document.createElement('li');
+        lii.innerHTML = `${langName}`
+        document.querySelector('.language').appendChild(lii)
+    }
+    // this is a function calling, pass parameter "C++" -: 
+    addLanguage("C++");
+    addLanguage("Leetcode"); 
+
+
+
+
+
+
+
+
+
+
+    // M-2 -:More optimize -: 
+    function addLang(langname){
+        // create a new list item -: 
+        const li=document.createElement('li');
+        // create new Text Node -: 
+        const addText=document.createTextNode(langname)
+        // append it into the list item -: 
+        li.appendChild(addText)
+        // now append it -: 
+        document.querySelector('.language').appendChild(li)
+    }
+    addLang('new Lang is added'); 
+
+
+
+
+    // Remove and Edit the ele. -: 
+
+    // 1-: edit -: 
+    // 1st select the ele. and store it into the variable -:
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // M-1- : change their inner HTML -: 
+    secondLang.innerHTML = "Java"; // Java is added 
+
+
+    // M-2-: Optimize -: 
+    const newli=document.createElement('li')
+    newli.textContent="C++ & Java"
+    secondLang.replaceWith(newli) // after that -: "C++ & Java" this is appended. 
+
+
+
+    // edit -: M-3 -:  
+    // first Javascript ko replace karna hai TypeScript se -:
+
+    const firstLang=document.querySelector("li:first-child")
+    firstLang.outerHTML='<li>Typescript</li>' // now changed 
+
+
+
+    // Remove the ele -: 
+    const lastchild=document.querySelector('li:last-child') // it gives last child from the ul 
+    lastchild.remove(); // now last child are removed. 
+
+</script>
+
+
+
+</html>

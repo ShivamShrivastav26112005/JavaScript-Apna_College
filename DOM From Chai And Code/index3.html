@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Part 3</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+
+
+<script>
+
+
+    // // create h1 tag -: 
+
+    // const h=document.createElement('h1');
+    // console.log(h);
+
+    // // o/p -: <h1></h1>
+
+
+
+
+
+
+
+
+    // // inside script tag we have to convert div ele. 
+    // // How to create ele. then we apply loop also. 
+
+    // // i am creating a ele. and hold it into the variable -: 
+    // const div=document.createElement('div');
+    // console.log(div);
+
+    // // div ele. is created -: Go to console section -: 
+    // // o/p -: <div></div>
+
+
+
+
+
+
+
+
+
+
+
+
+    // add properties inside the div ele.s -: 
+
+    const div=document.createElement('div');
+    console.log(div);
+    div.className="main"
+    div.id="myId"
+
+    // o/p -: added class and id on the div ele.s 
+    // <div class="main" id="myId"></div>
+
+
+    // OR -: 
+
+    div.id=Math.round(Math.random()*10+1)
+
+    // o/p -: id changed after every refresh 
+    // <div class="main" id="6"></div>
+
+
+
+
+    // set attributes -: 
+    // set "title" and the value of title is "generated title" 
+
+    div.setAttribute("title", "generated title")
+
+    // o/p -: <div class="main" id="6" title="generated title"></div>
+
+
+
+
+    // add styling -: 
+    div.style.backgroundColor="green"
+    div.style.padding="12px"
+
+    // o/p-: 
+    // <div class="main" id="2" title="generated title" style="background-color: green; padding: 12px;"></div>
+
+
+
+    
+    // // write something inside the div 
+    // div.innerHTML="Shivam" // innerHTML overrides the value. 
+    // // o/p -: 
+    // // <div class="main" id="8" title="generated title" style="background-color: green; padding: 12px;">Shivam</div>
+
+
+
+    // OR -: 2nd method -: 
+
+    // // document.createTextNode("Shivam")
+
+    // now hold it into the variable 
+    const addText=document.createTextNode("Shivam")
+    div.appendChild(addText)
+
+    // now attached with the document -: 
+    document.body.appendChild(div)
+
+    // after that a new ele. is generated on the page, you can see -: 
+
+
+
+
+
+</script>
+
+
+
+
+
+
+
+
+<script src="script3.js"></script>
+
+
+
+</html>
