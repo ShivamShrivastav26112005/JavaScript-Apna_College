@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Game - Rock, Paper, Scissors</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <h1>Rock Paper Scissors</h1> 
+
+
+    <!-- we have to show choices to the user when the user chooses rock, paper, or scissors -: so we make a div for choices -->
+    <div class="choices">
+        <!-- 1st for rock, 2nd for paper, and 3rd for scissors -->
+
+        <!-- rock, paper, and scissors are uniquely identified using their id -->
+        <div class="choice" id="rock">
+            <img src="./images/rock.jpeg" alt="Rock">
+        </div>
+        
+        <div class="choice" id="paper">
+            <img src="./images/paper.jpeg" alt="Paper">
+        </div>
+
+        <div class="choice" id="scissors">
+            <img src="./images/scissor.jpeg" alt="Scissors">
+        </div>
+    </div>
+
+
+
+    <!-- this div is for the score board -->
+    <div class="score-board">
+        <!--  1st for user score -: -->
+        <div class="score">
+            <p id="user-score">0</p>
+            <p>You</p>
+        </div>
+
+        <!--  2nd for computer score -: -->
+        <div class="score">
+            <p id="computer-score">0</p>
+            <p>Computer</p>
+        </div>
+    </div>
+
+
+    <!-- gives a message to us either we win or fail -->
+    <div class="msg-container">
+        <p id="msg">Play Your Move</p>
+    </div>
+
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
