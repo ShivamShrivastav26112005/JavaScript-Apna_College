@@ -1,0 +1,106 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #212121;
+    color: #fff;
+}
+
+.wrapper {
+    text-align: center;
+    background: #333;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(224, 20, 20, 0.5);
+    max-width: 500px;
+    width: 90%;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    margin: 0.5rem 0;
+}
+
+
+/* Form styles */
+form {
+    margin: 1rem 0;
+}
+
+label {
+    font-size: 1rem;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 0.5rem;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 3px solid #61dafb;
+    border-radius: 5px;
+    background-color: #444;
+    color: #f6f3f3;
+}
+
+input[type="submit"] {
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #61dafb;
+    color: #212121;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #51c0ea;
+}
+
+/* Result section */
+.resultParas {
+    margin-top: 1rem;
+    text-align: left;
+    background: #6d5d5d;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(28, 202, 51, 0.3);
+}
+
+.resultParas p {
+    margin: 0.5rem 0;
+}
+
+/* Button for restarting the game */
+.button {
+    margin-top: 1.5rem;
+    text-align: center;
+}
+
+#newGame {
+    display: inline-block;
+    padding: 0.7rem 1.5rem;
+    font-size: 1rem;
+    background-color: #61dafb;
+    color: #212121;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#newGame:hover {
+    background-color: #51c0ea;
+}
